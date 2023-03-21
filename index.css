@@ -15,6 +15,8 @@ body{
     padding: 0;
     color: white;
     background: linear-gradient(45deg, #0a192f, #183B59);
+    background-repeat: no-repeat;
+    padding-bottom: 110px;
 }
 header{
     display: flex;
@@ -223,12 +225,13 @@ main #projects article button:hover{
 
 }
 #preview div{
-    width: 70%;
+    width: 60%;
     margin: 20px auto;
 }
 #preview div img{
     width: 100%;
     height: auto;
+    cursor: zoom-in;
 }
 #preview div h1{
     position: absolute;
@@ -237,3 +240,65 @@ main #projects article button:hover{
     cursor: pointer;
 }
 
+
+#contact-section{
+    position: relative;
+    top: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#contact-section main{
+    width: 90%;
+    left: 0;
+    margin: 0 auto;
+}
+
+#contact-section main form{
+    padding-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+#contact-section main form input{
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    width: 100%;
+}
+#contact-section main form label{
+    font-size: 1.1rem;
+}
+
+#contact-section main h1{
+    font-size: 3rem;
+    margin-top: 0;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    opacity: 0;
+}
+
+#contact-section main h2{
+    font-weight: 400;
+}
+
+main form div textarea{
+    width: 100%;
+}
+main form div button{
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: 2px solid springgreen;
+    border-radius: 5px;
+    background: none;
+    color: whitesmoke;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+main form div button:hover{
+    background-color: rgba(0, 255, 128, 0.286);
+    transition: all, .5s;
+}
