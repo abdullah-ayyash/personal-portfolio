@@ -9,6 +9,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
     <link rel="manifest" href="./images/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <title>Abdullah Ayyash</title>
 </head>
 <body>
@@ -17,27 +23,81 @@
         <nav>
             <ul>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="/#projects">Projects</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Contact</a></li>
-
+                <li id="resume"><a href="https://drive.google.com/uc?export=download&id=11PJZdVxPxraTDRwcPXtCoCtssnv_0xYo">Resume</a></li>
             </ul>
+            
         </nav>
 
     </header>
 
     <section id="main-section">
-        <main>
+        <aside id="aside-left">
+            <ul>
+                <li><a href="#"></a><i class="fa fa-facebook" style="font-size:1.8rem;"></i></li>
+                <li><a href="#"></a><i class="fa fa-linkedin" style="font-size:1.8rem;"></i></li>
+                <li><a href="#"></a><i class="fa fa-github" style="font-size:1.8rem;"></i></li>
+                <li><a href="#"></a><i class="fa fa-codepen" style="font-size:1.8rem;"></i></li>
+            </ul>
 
+        </aside>
+
+        <main>
+            <section id="about">
+                <h1>Hi, my name is:</h1>
+                <h2 id="my-name"></h2>
+                <h3>Crafting High-Quality Websites for Your Business</h3>
+                <p>Passionate and self-driven full-stack software engineering student with a genuine interest in web development. Eager to learn and quick to pick up new skills. Completed relevant courses in computer science and programming, including C++ data structures, and Python.</p>
+                <a href="#projects"><button>Check Out My Work</button></a>
+            </section>
+            <hr>
+            <section id="projects">
+                <h1>Projects</h1>
+                <article>
+                    <img src="./images/chess.png">
+                    <h2>Chess Club Website</h2>
+                    <h3>HTML,CSS</h3>
+                    <p>the Summary of the project</p>
+                    <a><button id="chess-btn">View</button></a>
+                </article>
+
+                <article>
+                    <img src="./images/cooperation.png">
+                    <h2>Business Website</h2>
+                    <h3>HTML,CSS</h3>
+                    <p>the Summary of the project</p>
+                    <a><button id="business-btn">View</button></a>
+                </article>
+
+                <article>
+                    <img src="./images/credit-card.png">
+                    <h2>Credit Card Checker</h2>
+                    <h3>Javascript</h3>
+                    <p>the Summary of the project</p>
+                    <a href="https://github.com/abdullah-ayyash/credit-card-checker" target="_blank"><button>View</button></a>
+                </article>
+
+                <article>
+                    <img src="./images/dna.png">
+                    <h2>DNA Simulation</h2>
+                    <h3>Javascript</h3>
+                    <p>the Summary of the project</p>
+                    <a href="https://github.com/abdullah-ayyash/Pila-Aequor-Organism" target="_blank"><button>View</button></a>
+                </article>
+            </section>
 
         </main>
-        <aside>
-    
-        </aside>
+        
     </section>
-
+    <section id="preview">
+        <div>
+            <img id="preview-img">
+            <h1 id="close-btn">X</h1>
+        </div>
+        
+    </section>
 
     <footer>
         
