@@ -102,6 +102,8 @@ main{
 #aside-left ul{
     list-style-type: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 #aside-left ul::after{
@@ -115,6 +117,10 @@ main{
 
 #aside-left ul li{
     margin-top: 20px;
+}
+
+#aside-left ul li a{
+    color: whitesmoke;
 }
 
 #aside-left ul li i{
@@ -301,4 +307,100 @@ main form div button{
 main form div button:hover{
     background-color: rgba(0, 255, 128, 0.286);
     transition: all, .5s;
+}
+
+
+#send-btn{
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: 2px solid springgreen;
+    border-radius: 5px;
+    background: none;
+    color: whitesmoke;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+#send-btn:hover{
+    background-color: rgba(0, 255, 128, 0.286);
+    transition: all, .5s;
+}
+
+
+@media only screen and (max-width: 1600px){
+    main #projects{
+        row-gap: 0.5rem;
+        column-gap: 0.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+    main #about h2{
+        font-size: 3rem;
+    }
+    main #about h3{
+        font-size: 2.8rem;
+    }
+    main #projects{
+        row-gap: 0.5rem;
+        column-gap: 0.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    main #about h2{
+        font-size: 2.7rem;
+    }
+    main #about h3{
+        font-size: 2.5rem;
+    }
+    main #about p{
+        width: 100%;
+    }
+    main #about{
+        width: 90%;
+    }
+
+    header h1{
+        width: 10%;
+        padding: 7px 0px;
+    }
+    nav {
+        width: 85%;
+    }
+    nav ul li {
+        font-size: 1rem;
+    }
+    main #projects{
+        row-gap: 1rem;
+        column-gap: 0.5rem;
+    }
+    main #projects h1{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 650px){
+    main #about h2{
+        font-size: 2.5rem;
+    }
+    main #about h3{
+        font-size: 2.3rem;
+    }
+    #aside-left{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+    main #projects article{
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+
 }

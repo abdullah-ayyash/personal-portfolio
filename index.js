@@ -102,3 +102,23 @@ function contactStat() {
         contactHeading.style.borderBottom = 'none'
     }
 }
+
+
+const showSucess = () =>{
+    const fnVal = document.getElementsByClassName('inputs-field')
+    if(fnVal[0].value){
+        document.getElementById('sucessMessage').style.display = 'block';
+        scrollTo(0, document.body.scrollHeight);
+    }
+    fnVal[0].value = '';
+    fnVal[1].value = '';
+    fnVal[2].value = '';
+    fnVal[3].value = '';
+    
+    
+}
+
+const sendBtn = document.getElementById('send-btn');
+sendBtn.onclick = showSucess;
+
+
