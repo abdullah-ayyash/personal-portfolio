@@ -234,16 +234,19 @@ main #projects article button:hover{
     width: 60%;
     margin: 20px auto;
 }
-#preview div img{
+#preview-img{
     width: 100%;
     height: auto;
-    cursor: zoom-in;
 }
+
 #preview div h1{
     position: absolute;
     top: 0;
     right: 50px;
     cursor: pointer;
+    font-size: 1.8rem;
+    text-shadow: 0px 0px 5px black;
+
 }
 
 
